@@ -24,4 +24,4 @@ Here are some pictures:
   <img width="49%" alt="Payment" src="https://user-images.githubusercontent.com/56433128/121781481-473aa480-cba5-11eb-8b5c-f009df646540.png">
   <img width="49%" alt="Payment" src="https://user-images.githubusercontent.com/56433128/121781496-59b4de00-cba5-11eb-8606-fad918db231d.png">
 </div>
-<img width="99%" alt="Dashboard" src="https://user-images.githubusercontent.com/56433128/121780978-fde95580-cba2-11eb-86f8-ffa181b8917a.png">
+<img width="98%" alt="Dashboard" src="https://user-images.githubusercontent.com/56433128/121780978-fde95580-cba2-11eb-86f8-ffa181b8917a.png">
