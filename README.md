@@ -11,6 +11,6 @@ Once that users are subscribed to the service, they can access their personal da
 - Reset the IP address on which the software is binded (in this case google chrome's extension). 
 
 A complete Demo of the Web Application can be found at the following URL:
-[a link](https://sharkio-2021.web.app/)
+[SharkIO](https://sharkio-2021.web.app/)
 
 Below you can also find some pictures:
