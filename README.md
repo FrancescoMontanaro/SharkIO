@@ -13,6 +13,9 @@ Once that users are subscribed to the service, they can access their personal da
 A complete Demo of the Web Application can be found at the following URL:
 [SharkIO](https://sharkio-2021.web.app/)
 
+To try the subscription flow and access all the dashboard's functionalities it is possible to subscribe by using one of the Stripe's testing credit cards. More information at the following URL: 
+[Stripe Testing Cards](https://stripe.com/docs/testing)
+
 Here are some pictures:
 
 <img width="1419" alt="Login" src="https://user-images.githubusercontent.com/56433128/121780963-f3c75700-cba2-11eb-936a-7a2613de42df.png">
