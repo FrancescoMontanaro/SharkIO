@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SharkIO - Subscribe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://js.stripe.com/v3/"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+        </style>
+    </head>
+    <body>
+        <div id="error" class="modal" style="background-color: rgb(55,66,84);">
+            <div class="box errorBox">
+                <div class="errorIcon">
+                    <img src="images/error.svg" width="60px">
+                </div>
+                <div style="padding: 20px;">
+                    <h2>Ops!</h2>
+                    <h4 id="errorMessage" style="margin-top: 20px;"></h4>
+                    <div class="button" style="width: calc(100% - 30px); margin-bottom: 0;" onclick="document.getElementById('error').style.display = 'none';">Close</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loader" class="modal" style="display: grid;">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#00e8aa" />
+                            <stop offset="50%" stop-color="#00e857" /> <stop offset="100%" stop-color="#00e8ad" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" stroke="url(#gradient)"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+
+        <div class="button logout" onclick="logout();">
+            Logout
+        </div>
+
+        <div class="mainArea">
+            <div class="box paymentBox">
+                <div style="margin-bottom: 15px;">
+                    <h4>Enter your card Details</h4>
+                    <h4>Your Subscription will start now</h4>
+                    <span>&#x2192 40&#8364 License Key<br>&#x2192 25&#8364/month</span>
+                </div>
+                <form id="payment-form" onsubmit="event.preventDefault(); paymentSubmitted();">
+                    <label><b>FULL NAME</b></label>
+                    <input id="name" style="margin-bottom: 12px;" placeholder="First and Last Name" required>
+                    <label><b>CARD</b></label>
+                    <div id="cardContainer" class="cardContainer">
+                        <div id="card-element">
+                        </div>
+                    </div>
+                
+                    <div id="card-element-errors" role="alert"></div>
+                    <button class="submitButton" type="submit" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/payment.js"></script>
+    </body>
+</html>

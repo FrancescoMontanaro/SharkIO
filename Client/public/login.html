@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SharkIO - Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainArea">
+            <div class="loginDiv">
+                <img src="images/logo.png">
+                <div class="box login" onclick="login();">
+                    <div class="discordButton">
+                        Login with Discord<sup>&#174</sup>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/config.js"></script>
+        <script>
+            function login(){
+                window.location.href = login_redirect;
+            }
+        </script>
+    </body>
+</html>

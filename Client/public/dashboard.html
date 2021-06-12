@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SharkIO - Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="error" class="modal" style="background-color: rgb(55,66,84);">
+            <div class="box errorBox">
+                <div class="errorIcon">
+                    <img src="images/error.svg" width="60px">
+                </div>
+                <div style="padding: 20px;">
+                    <h2>Ops!</h2>
+                    <h4 id="errorMessage" style="margin-top: 20px;"></h4>
+                    <div class="button" style="width: calc(100% - 30px); margin-bottom: 0;" onclick="document.getElementById('error').style.display = 'none';">Close</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loader" class="modal" style="display: grid;">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#00e8aa" />
+                            <stop offset="50%" stop-color="#00e857" /> <stop offset="100%" stop-color="#00e8ad" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" stroke="url(#gradient)"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="mainArea">
+
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+
+            <div class="button logout" onclick="logout();">
+                Logout
+            </div>
+
+            <div id="licenseActivation" class="box licenseActivation" style="display: none;">
+                <div class="avatarContainer" style="margin-bottom: 20px;">
+                    <img class="avatar">
+                </div>
+                <h3 class="username"></h3>
+                <div class="line" style="margin-top: 20px; margin-bottom: 20px;"></div>
+                <h3 style="margin-bottom: 10px;">Activate Your License Key</h3>
+                <form id="licenseForm" onsubmit="event.preventDefault(); activateLicense();">
+                    <input id="activateLicenseInput" placeholder="xxxx-xxxx-xxxx-xxxx-xxxx" style="text-align: center;" maxlength="20" required>
+                    <button class="button" style="width: calc(100% - 40px); margin-bottom: 40px;" type="submit">Activate License Key</button>
+                </form>
+                <h4 style="margin-bottom: 0;">Don't have any License Key?</h4>
+                <p style="margin: 0;"><a href="customer.html" style="color: #fff;"><u>Buy a new License Key</u></a></p>
+            </div>
+
+
+            <div id="dashboard" class="dashboard"  style="display: none;">
+                <div class="box dashHeader">
+                    <table style="width: fit-content;">
+                        <tr>
+                            <td>
+                                <div class="avatarContainer">
+                                    <img class="avatar">
+                                </div>
+                            </td>
+                            <td>
+                                <div style="margin-left: 10px;">
+                                    <h2>Welcome back,</h2>
+                                    <h4 class="username"></h4>
+                                    <p id="memberSince">Member Since </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="position: absolute; height: 100%; right: 30px; display: grid; place-items: center;">
+                        <div class="mainBtns">
+                            <div class="button" style="margin-right: 20px;" onclick="joinDiscord();">
+                                Join Discord
+                            </div>
+                            <div class="button" onclick="unbind();">
+                                Unbind Discord
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashRow">
+                    <div class="box dashInfo">
+                        <p>Status</p>
+                        <span id="status"></span>
+                        <p>Email</p>
+                        <span id="email"></span>
+                        <p>Pricing</p>
+                        <span>25&#8364; / month</span>
+                        <p>Next Renew Date</p>
+                        <span id="renewDate"></span>
+                    </div>
+                    <div class="box">
+                        <p>License Key</p>
+                        <div class="licenseField">
+                            <div style="display: inline-block; width: 100%;">
+                                <div class="licenseDiv" style="float: left;">
+                                    <div class="licenseBlur"></div>
+                                    <span id="licenseKeyValue"></span>
+                                </div>
+                                <div class="button" title="Show/Hide" style="float: right; width: 30px; height: 30px; border-radius: 50%; padding: 0; position: relative; margin: 0; margin-left: 8px; transform: translateY(-5px);">
+                                    <img id="licenseEye" src="images/eye.svg" style="position: absolute; left: calc(50% - 10px); top: calc(50% - 10px);" width="20px" onclick="show_hide_license();">
+                                </div>
+                            </div>
+                        </div>
+                        <p>Binded IP Address</p>
+                        <div class="licenseField">
+                            <div style="display: inline-block; width: 100%;">
+                                <div style="float: left;">
+                                    <span id="ipAddress"></span>
+                                </div>
+                                <div class="button" title="Reset IP Address" style="float: right; width: 30px; height: 30px; border-radius: 50%; padding: 0; position: relative; margin: 0; margin-left: 8px; transform: translateY(-5px);">
+                                    <img id="resetIp" src="images/edit.svg" style="position: absolute; left: calc(50% - 10px); top: calc(50% - 10px);" width="20px" onclick="reset_ip();">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button manageBtn" onclick="manageSubscription();">Manage Subscription</div>
+                    </div>
+                    <div class="alternativeBtns">
+                        <div class="box">
+                            <div class="button" style="width: 80%; margin: auto; margin-bottom: 10px;" onclick="joinDiscord();">
+                                Join Discord
+                            </div>
+                            <div class="button" style="width: 80%; margin: auto; margin-top: 10px;" onclick="unbind();">
+                                Unbind Discord
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img class="downloadLogo" src="images/logo.png">
+                        <div class="button downloadBtn">
+                            <img src="images/download.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/config.js"></script>
+        <script src="js/dashboard.js"></script>
+    </body>
+</html>

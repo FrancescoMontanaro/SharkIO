@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <script src="js/config.js"></script>
+  <script>
+      session = getCookie("session");
+      if(session == null || session == ""){
+        window.location.href = "login.html";
+      }
+      else{
+        window.location.href = "dashboard.html";
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SharkIO - Subscribe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="error" class="modal" style="background-color: rgb(55,66,84);">
+            <div class="box errorBox">
+                <div class="errorIcon">
+                    <img src="images/error.svg" width="60px">
+                </div>
+                <div style="padding: 20px;">
+                    <h2>Ops!</h2>
+                    <h4 id="errorMessage" style="margin-top: 20px;"></h4>
+                    <div class="button" style="width: calc(100% - 30px); margin-bottom: 0;" onclick="document.getElementById('error').style.display = 'none';">Close</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loader" class="modal" style="display: grid;">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#00e8aa" />
+                            <stop offset="50%" stop-color="#00e857" /> <stop offset="100%" stop-color="#00e8ad" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" stroke="url(#gradient)"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+
+        <div class="button logout" onclick="logout();">
+            Logout
+        </div>
+
+        
+        <div class="mainArea">
+            <div class="box paymentBox">
+                <div style="margin-bottom: 15px;">
+                    <h4 style="margin: 0;">Enter your Email Address</h4>
+                </div>
+                <form id="email-form" onsubmit="event.preventDefault(); createCustomer();">
+                    <label><b>EMAIL</b></label>
+                    <input id="email1" style="margin-bottom: 12px;" placeholder="Email" required>
+                    <label><b>REPEAT EMAIL</b></label>
+                    <input id="email2" style="margin-bottom: 12px;" placeholder="Email" required>
+                    <button type="submit" style="width: 100%;">Enter Email</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/config.js"></script>
+        <script src="js/customer.js"></script>
+    </body>
+</html>
