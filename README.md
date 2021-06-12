@@ -6,7 +6,7 @@ To access the service users have to login with their Discord Account. Once logge
 The payment flow has been implemented by using Stripe's technologies. In this case, the subscription is composed by an initial setup fee, plus a recurrent monthly payment.
 Once that users are subscribed to the service, they can access their personal dashboard, through which thay can retrive all the information related to their subscription, or perform some actions such as:
 - Manage their subscription.
-- Joining the Official Discord's Server of the Service.
+- Join the Official Discord's Server of the Service.
 - Unbind their license from their current Discord Account.
 - Reset the IP address on which the software is binded (in this case google chrome's extension). 
 
