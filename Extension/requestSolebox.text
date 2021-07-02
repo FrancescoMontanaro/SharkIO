@@ -1,0 +1,19 @@
+:authority: www.solebox.com
+:method: POST
+:path: /en_IT/add-product?format=ajax
+:scheme: https
+accept: application/json, text/javascript, */*; q=0.01
+accept-encoding: gzip, deflate, br
+accept-language: it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+content-length: 114
+content-type: application/x-www-form-urlencoded; charset=UTF-8
+cookie: test; dwanonymous_0e5f1b8bd4b7e281cbecc26270bd55c1=beFYzFOcAERbkkLQaycFrD4xbK; localStore=false; baqend-speedkit-ab-test-info=%7B%22group%22%3A%22A%22%2C%22testId%22%3A%22100vs0%22%7D; baqend-speedkit-user-id=3jdoTjCm7bWwK6PxFrHzC0HXX; _gcl_au=1.1.1054475378.1624026597; scarab.visitor=%224839ACF35663139F%22; _pxhd=PUEy4kHzfmJZsuIh04jzSjYCS0GUKJ9TBdGPDC-NwaisG3yrx/0dkpG4pflLmI1j5h531/UlcUzNcoEOXzpvkg==:iMZrQVWMWCKgYBcIyow-v5HxM50zl84dJcMovJYt4qL9/SMzpHQCP6/Bq70lz8bWnm75qT1qnsTmRTpINmSJM/zwysnNwP6FLl7jEr6Nx7I=; customerCountry=it; _ga=GA1.2.2123470496.1624026597; _pxvid=a7828e37-d041-11eb-a583-0242ac120009; __cq_uuid=beFYzFOcAERbkkLQaycFrD4xbK; hideFVP=true; dwac_6915a153f1e2381a3decf47a04=PcmCdmw_yIcmihv_b5Nmy8H662mgyLutZ1Y%3D|dw-only|||EUR|false|Europe%2FBerlin|true; cqcid=beFYzFOcAERbkkLQaycFrD4xbK; cquid=||; sid=PcmCdmw_yIcmihv_b5Nmy8H662mgyLutZ1Y; __cq_dnt=0; dw_dnt=0; dwsid=L8o6lZ_wfVfoIa6HMSjwhNP5U4pTBw59qf27pGK7n6cW_KSdVPU1biLfBWD9OZkZkV4mbJ14F49DqoqHszd5aQ==; test; _gid=GA1.2.1314157445.1624124240; scarab.mayAdd=%5B%7B%22i%22%3A%2201931516%22%7D%2C%7B%22i%22%3A%2201973919%22%7D%2C%7B%22i%22%3A%2201931701%22%7D%5D; __cq_bc=%7B%22bdcb-solebox%22%3A%5B%7B%22id%22%3A%222f2x1ekd2e2c1ekd2j1ekd2c1w1ekd351ekd1z1ekd9221ekd51ekd%22%2C%22type%22%3A%22vgroup%22%2C%22alt_id%22%3A%2201931516%22%7D%2C%7B%22id%22%3A%225c1ekdw1ekd61d2e1ekd1ekd1gx23c351d1ekd81ekdo%22%2C%22type%22%3A%22vgroup%22%2C%22alt_id%22%3A%2201931701%22%7D%2C%7B%22id%22%3A%22m01973919%22%2C%22type%22%3A%22vgroup%22%2C%22alt_id%22%3A%2201973919%22%7D%2C%7B%22id%22%3A%221ekd1ekd2p1ekd361ekd2ue31ekdqb1ekd2f301ekd252c2g1ekd%22%2C%22type%22%3A%22vgroup%22%2C%22alt_id%22%3A%2201931702%22%7D%2C%7B%22id%22%3A%22m01931651%22%2C%22type%22%3A%22vgroup%22%2C%22alt_id%22%3A%2201931651%22%7D%5D%7D; __cq_seg=0~-0.28!1~0.06!2~-0.23!3~-0.21!4~-0.02!5~0.47!6~-0.07!7~-0.50!8~0.24!9~0.54; _pxff_bsco=1; kameleoonVisitorCode=_js_2q36q2ktq6nyxku0; scarab.profile=%2201931516%7C1624125018%7C01931701%7C1624124493%7C01973919%7C1624124369%7C01931702%7C1624027304%7C01931651%7C1624027018%22; _uetsid=ff90f800d12411ebabd6490ca67617ab; _uetvid=a780b020d04111ebb3dc13d06aadb755; _px3=73e721391f76f12e4b6d0c5ba3e288c57ba78425de7d3de71462f397a9b03fa3:gK8ZUUrqcTpoZbv8oAWcTmiPsn2yo9VQzxJYsgaNVU2gY77oS1GWaK2E8QAddHogYvxn0qpwf0g9VZYqWhcFtw==:1000:B7pNJCEX3Z6JeNhlEU8wq9NbWSlX5T88mBjm8CBuHhZ9r3Ir+/ebiquDxZl1AVUDnJ3hivVIlj6To04F2pi5P2dVEsQm04JbsBX8IiJyATFOfD4/zmcnr9f3/78Pui/t33ijd5SBdOFK8tmG5P25FKFYjFdc0aL3Qq6crzbPxDR97xkoXjXkMD4WjJZRYSSu/wfkJovWT9NzwsbmJJJcog==; _gat_UA-3768969-1=1
+origin: https://www.solebox.com
+referer: https://www.solebox.com/en_IT/p/nike-air_huarache_og_%27%27bright_mango%27%27-white%2Fpurple-bright_mango-black-01931516.html
+sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+sec-ch-ua-mobile: ?0
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36
+x-requested-with: XMLHttpRequest
