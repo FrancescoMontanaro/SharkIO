@@ -7,3 +7,5 @@ firebase.json
 Gui/
 Extension/
 .git
+.firebaserc
+firebase.json
